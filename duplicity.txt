@@ -1,0 +1,9 @@
+=if(AND(COUNTIF($A$1:$A2,A2)=1, COUNTIF($B$1:$B2,B2)=1), "", "Yes")
+
+Funkce v tomto tvaru patøí do øádku 2, tj to prvního pod hlavièkou
+Ovìøuje to duplicitu podle sloupce A (u mì jméno) a B (u mì linkedin url)
+Dìlá to:
+- vezmi oblast $A$1:$A2
+- je v této oblasti stejné hodnota jako v buòce A2?
+- pokud ano, napiš Yes (je to duplicita)
+- to samé pro sloupec B s logikou, když je alespoò jeden ze sloupcù vyhodnocen jako duplicita, pak je celý záznam duplicitní
